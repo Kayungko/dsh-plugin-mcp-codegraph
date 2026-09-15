@@ -1,0 +1,12 @@
+# Mount CodeGraph as a DSH MCP server (read-only code intelligence).
+# Isolated plugin group; mounts @deepseek-ai/dsh-mcp-client with the CodeGraph
+# stdio server, so tools register as mcp__codegraph__*.
+- insert:
+    - id: mcp-codegraph
+      name: '@deepseek-ai/cordis-plugin-group'
+      group: true
+      isolate:
+        mcpCodegraph: true
+      config:
+        - id: mcp-codegraph-runtime
+          name: 'dsh-plugin-mcp-codegraph'
