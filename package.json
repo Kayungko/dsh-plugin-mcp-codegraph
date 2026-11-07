@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-mcp-codegraph",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mount CodeGraph (codegraph serve --mcp) as an MCP server in DeepSeek Harness, so sessions can query code structure / symbols / call paths through mcp__codegraph__* tools.",
   "type": "module",
   "main": "index.mjs",
@@ -24,7 +24,7 @@
     "test": "node --test test/*.test.mjs"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.6 <0.2.0"
+    "@deepseek-ai/dsh-mcp-client": ">=0.1.0-rc.6 <0.2.0 || >=0.2.2-rc.1 <0.2.3"
   },
   "engines": {
     "node": "^22.19.0 || >=24"
